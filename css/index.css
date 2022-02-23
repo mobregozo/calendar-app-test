@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+#calendar .container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: (5, minmax(100px, 1fr));
+  border-left: solid 1px black;
+  border-top: solid 1px black;
+}
+
+#calendar .container .day {
+  text-align: right;
+  padding: 1rem;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+  height: 100px;
+}
+
+#calendar .container .day:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.selected {
+  background-color: lightblue;
+}
