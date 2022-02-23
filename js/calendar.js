@@ -21,7 +21,11 @@ const createCalendar = () => {
   calendarBox.addEventListener("click", addEvents);
   const node = document.createElement("div");
   node.classList.add("container");
+
+  // get current Date
   const currentDate = new Date();
+
+  // get number of days of the month as 0 is the last day of the previous month 
   const totalDaysOfTheMonth = new Date(
     currentDate.getFullYear(),
     currentDate.getMonth(),
